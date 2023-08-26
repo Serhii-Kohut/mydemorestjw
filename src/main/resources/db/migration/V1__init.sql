@@ -1,5 +1,5 @@
 create table users (
-                       id                    bigserial,
+                       id                    bigint auto_increment,
                        username              varchar(30) not null unique,
                        password              varchar(80) not null,
                        email                 varchar(50) unique,
@@ -7,7 +7,7 @@ create table users (
 );
 
 create table roles (
-                       id                    serial,
+                       id                    integer auto_increment,
                        name                  varchar(50) not null,
                        primary key (id)
 );
